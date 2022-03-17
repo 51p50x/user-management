@@ -1,6 +1,6 @@
 import './Input.css'
 
-const Inputs = ({label, ...rest}) =>{
+const Input = ({label, ...rest}) =>{
     return(
         <div className='field'>
             <label>{label}</label>
@@ -10,4 +10,4 @@ const Inputs = ({label, ...rest}) =>{
     )
 }
 
-export default Inputs
+export default Input
