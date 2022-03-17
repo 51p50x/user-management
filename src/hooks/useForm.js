@@ -8,8 +8,12 @@ const useForm=(initialValue)=>{
       [e.target.name] : e.target.value
     })
   }
+  
+  const reset = () =>{
+    setForm(initialValue)
+  }
 
-  return[form, handleChange]
+  return[form, handleChange, reset]
 }
 
 export default useForm
